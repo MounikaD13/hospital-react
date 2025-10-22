@@ -1,0 +1,11 @@
+.navbar{
+    background-color: rgb(204, 162, 255);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+.navbar a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.3rem;
+}
