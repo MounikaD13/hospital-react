@@ -1,6 +1,17 @@
-.container .card{
-    border: 1px solid  black ;
+.container .card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 255, 0.20);
+
 }
-.container h2{
-    color:  rgb(103, 19, 205);
+
+.container h2 {
+    color: rgb(103, 19, 205);
+}
+
+.docpat {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/038/826/109/non_2x/nurse-talking-to-patient-in-hospital-room-concept-flat-illustration-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover
 }

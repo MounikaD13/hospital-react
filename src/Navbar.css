@@ -1,7 +1,5 @@
 .navbar{
-    background-color: rgb(204, 162, 255);
-    display: flex;
-    justify-content: space-evenly;
+    background-color: aliceblue;
     padding: 15px;
 }
 .navbar a{

@@ -19,7 +19,7 @@ export default function Register() {
   }
   return (
     <div className='reg'>
-      <h3 className='text-center mt-5'>Patients Registration</h3>
+      <h3 className='text-center mt-5 display-4'>Patients Registration</h3>
       <div className='text-center mt-4 '>
         <input type="text" placeholder='Enter your Name' name="name" onChange={(e) => setName(e.target.value)} />
         <br />

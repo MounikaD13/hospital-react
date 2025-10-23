@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import './Register.css'
+import './Login.css'
 
 export default function Login() {
   const [name, setName] = useState("")
@@ -19,8 +19,8 @@ export default function Login() {
 
   }
   return (
-    <div className='reg'>
-      <h3 className='text-center mt-5'>Doctors Login</h3>
+    <div className='login'>
+      <h3 className='text-center display-4 mt-5'>Doctors Login</h3>
       <div className='text-center mt-4 '>
         <input type="text" placeholder='Enter your Name' name="name" onChange={(e) => setName(e.target.value)} />
         <br />

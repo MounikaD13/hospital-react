@@ -1,16 +1,18 @@
 @media (min-width: 700px) {
-    .reg{
-        background-image: url('https://cdni.iconscout.com/illustration/premium/thumb/man-booking-online-appointment-4207646-3485596.png');
+    .login {
+        background-image: url('https://carenowdoc.com/static/media/doctor_login_img.1c8064c4.svg');
         background-repeat: no-repeat;
         background-size: contain;
     }
 }
 @media(max-width:700px){
-    .reg{
+    .login{
     background-color: aliceblue;
 }
 }
-.reg input,button {
+
+.login input,
+button {
     margin-bottom: 10px;
     padding: 7px;
     outline: none;
@@ -18,25 +20,27 @@
 }
 
 @media (min-width: 700px) {
-    .reg input,
+
+    .login input,
     button {
         width: 25%;
     }
 }
 
-.reg h3 {
+.login h3 {
     color: rgb(103, 19, 205);
 }
 
-.reg button {
-   background-color: rgb(100, 100, 228);
+.login button {
+    background-color: rgb(100, 100, 228);
     border-color: blue;
     font-size: 1.2rem;
     color: white;
     border: 1px solid;
     border-radius: 15px;
 }
-.reg button:hover{
-   background-color: aliceblue;
+
+.login button:hover {
+    background-color: aliceblue;
     color: blue;
 }

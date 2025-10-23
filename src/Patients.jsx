@@ -1,40 +1,42 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import "./Doctors.css"
+import './Doctors.css'
 
-export default function Home() {
-    const [doctors, setDoctors] = useState([])
+export default function Patients() {
+    const [patients, setPatients] = useState([])
     useEffect(() => {
         // console.log('from useEffect')
-        loadDoctors()
+        loadPatients()
     }, [])
-    function loadDoctors() {
-        axios.get("https://doc-back.onrender.com/doctors")
+    function loadPatients() {
+        axios.get("https://doc-back.onrender.com/patients")
             .then((res) => {
                 // console.log(res.data)
-                setDoctors(res.data)
+                setPatients(res.data)
             })
     }
     return (
         <div className='container docpat mt-5'>
-            <h2 className='text-center mb-4 display-4'>Doctors Details</h2>
+            <h2 className='text-center mb-4 display-3'>Patients Details</h2>
             <div className='row'>
-                {doctors.map((i) => (
+                {patients.map((i) => (
                     <div className='col-md-4 mb-3' key={i.id}>
                         <div className='card'>
                             <h5 className='card-title text-center mt-4'>ID-{i.id}</h5>
                             <div className='card-body ps-md-4'>
                                 <p>Name: {i.name}</p>
                                 <p>Age: {i.age} yrs</p>
+                                <p>Weight: {i.weight} kgs</p>
                                 <p>Gender: {i.gender}</p>
-                                <p>Salary: {i.salary}</p>
-                                <p>Specialization: {i.specialization}</p>
+                                <p>Disease: {i.disease}</p>
+                               <p>Doctor: {i.doctor?.name || 'No information'}</p>
+                               <p>Doctor's specialization: {i.doctor?.specialization || 'No information'}</p>
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
-            {console.log(doctors)}
+            {console.log(patients)}
         </div>
     )
 }
