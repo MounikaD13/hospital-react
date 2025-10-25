@@ -39,7 +39,7 @@ export default function Navbar() {
                <i class="fa-solid fa-user-doctor"></i>Login
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item register">
               <Link className="nav-link" to="/Register">
               <i class="fa-solid fa-calendar-check"></i>
                 Book_Appointment
