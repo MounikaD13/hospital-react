@@ -1,6 +1,8 @@
 .navbar{
     background-color: aliceblue;
     padding: 15px;
+    position:sticky;
+    top: 0px;
 }
 .navbar a{
     text-decoration: none;

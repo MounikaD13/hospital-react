@@ -19,7 +19,7 @@
 @media(min-width:776px) {
   .image h1{
     padding-top:10%;
-    width: 40%;
+    width: 35%;
     margin-left: 15%;
   }
 }
@@ -36,4 +36,8 @@
 body{
   margin: 0px;
 }
+.everyday h2{
+  padding: 13px;
+}
+
 
